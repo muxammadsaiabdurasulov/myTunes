@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  background-color: #252529;
+  margin: 0;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1180px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+/* Header */
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+/* Section */
+.section {
+  padding: 2rem 0;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.main-heading {
+  font-size: 2rem;
+}
+
+.bg-star {
+  background: url("../images/download.jpg") no-repeat bottom/cover;
+  padding: 10rem 0;
+}
+
+.gift-cards {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+}
+/* Showcase */
+.site-header {
+  margin: 0;
+  padding: 0;
+  background: url("../images/header-bg.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.site-header .container {
+  margin-top: 25vh;
+}
+
+.content-title {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.content-bio {
+  font-size: 2rem;
+}
+
+/* Footer */
+.footer-table {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem;
+  text-align: left;
+  font-size: 14px;
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.footer-item:first-child {
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: #444 solid 1px;
+  margin-bottom: 1rem;
+}
+
+.footer-bottom {
+  background: #333;
+  padding: 1rem;
+}
+
+/* Utility Classes */
+
+.content-text {
+  font-size: 1.3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Buttons */
+.btn {
+  padding: 1rem;
+  color: #fff;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #b90415;
+}
+
+.btn-primary:hover {
+  background: #d3071b;
+}
+
+.btn-secondary {
+  background: #103063;
+}
+
+.btn-secondary:hover {
+  background: #143f85;
+}
+
+/* Text colors */
+.text-primary {
+  color: #b90415;
+}
+
+.text-secondary {
+  color: #103063;
+}
+
+.text-light {
+  color: #f4f4f4;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+.mt {
+  margin-top: 1rem;
+}
+.navbar {
+  height: 40px;
+  width: 100%;
+  background-color: #333;
+  color: rgb(51, 34, 34);
+  position: fixed;
+}
+.nav-list {
+  padding: 0;
+  margin: 0;
+}
+.nav-item {
+  display: inline;
+  float: left;
+}
+
+.nav-link {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #eee;
+  text-decoration: none;
+}
+.nav-item:hover {
+  background-color: #444;
+}
+
+@media screen and (max-width: 580px) {
+  .nav-item {
+    display: none;
+  }
+
+  .site-header {
+    height: 50vh;
+  }
+
+  .site-header .container {
+    margin-top: 15vh;
+  }
+
+  .content-title {
+    font-size: 3rem;
+  }
+
+  .content-bio {
+    font-size: 1.5rem;
+  }
+
+  .navbar {
+    height: auto;
+    border-bottom: 0;
+  }
+  .nav-list {
+    display: none;
+    height: auto;
+  }
+  .nav-item {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  .nav-link {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #333;
+    border-bottom: 1px solid #555;
+  }
+  .nav-link:hover {
+    background: #444;
+  }
+}
+.navbar:before,
+.navbar:after {
+  content: "";
+  display: table;
+}
+
+.navbar:after {
+  clear: both;
+}
+
+.navbar {
+  zoom: 1;
+}
+
+@media screen and (max-width: 780px) {
+  .gift-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-table {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 580px) {
+  .site-header .content-text {
+    display: none;
+  }
+}
