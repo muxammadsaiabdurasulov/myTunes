@@ -110,8 +110,6 @@ a {
   padding: 1rem;
 }
 
-/* Utility Classes */
-
 .content-text {
   font-size: 1.3rem;
 }
@@ -120,7 +118,6 @@ a {
   text-align: center;
 }
 
-/* Buttons */
 .btn {
   padding: 1rem;
   color: #fff;
@@ -143,7 +140,6 @@ a {
   background: #143f85;
 }
 
-/* Text colors */
 .text-primary {
   color: #b90415;
 }
